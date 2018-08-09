@@ -127,34 +127,158 @@ nav .nav_list{
     width: 100%;
     height: auto;
 }
-.sec_list{
+.sec_list1{
     width: 50%;
-    height: 592px;
-    background: #0070c9;
     float: left;
     border-bottom: 12px solid #fff;
-    border-left: 12px solid #fff;
-    border-right: 6px solid #fff;
     box-sizing: border-box;
-    /*-webkit-box-sizing: border-box;*/
-    /*-moz-box-sizing: border-box;*/
     background: url("../img/shop_for_college_large.jpg") no-repeat center;
 }
-.sec_list h1{
+.sec_list1 h1{
     color: #111111;
     text-align: center;
 }
-.sec_list h2{
+.sec_list1 h2{
     font-weight: 400;
     color: #111111;
     text-align: center;
     margin: 0 auto;
 }
-
-
-
-
-
+/*section_two结束*/
+/*底部开始*/
+footer{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #f2f2f2;
+}
+.footer_main_max{
+    margin: 0 auto;
+    padding: 0 22px;
+}
+.nav{
+    width: 20%;
+    height: auto;
+    float: left;
+    padding-top: 40px;
+}
+.nav_list1{
+    width: 100%;
+    height: auto;
+    box-sizing: content-box;
+}
+dt{
+    font-size: 8px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+dd{
+    font-size: 8px;
+    margin-bottom: 8px;
+}
+.nav_list1 a{
+    color: #111;
+}
+.body{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 34px 0 21px;
+    overflow: hidden;
+}
+.body_top{
+    height: auto;
+    padding-bottom: 8px;
+    font-size: 10px;
+    color: #888888;
+}
+.body_top a{
+    color: #0070C9;
+}
+.body_top a:hover{
+    border-bottom: 1px solid #0070c9;
+}
+p a{
+    color: #888888;
+}
+p a:hover{
+    border-bottom: 1px solid #888888;
+}
+.body_bottom{
+    overflow: hidden;
+    position: relative;
+}
+.body_bottom_left{
+    width: 260px;
+    height: auto;
+    font-size: 8px;
+    color: #888888;
+    margin: 5px 30px 0 0;
+    float: left;
+}
+.body_bottom_right{
+    width: 350px;
+    height: auto;
+    font-size: 8px;
+    margin: 5px 30px 0 0;
+    float: left;
+}
+.body_bottom_right a{
+    color: #555555;
+    padding-right: 10px;
+    border-right: 1px solid #d6d6d6;
+    margin-right: 7px;
+ }
+.body_bottom_right a:nth-child(5){
+    border-right: 0;
+}
+.china{
+    width: 50px;
+    height: 20px;
+    font-size: 8px;
+    float: right;
+    position: absolute;
+    top: 5px;
+    right: -7px;
+}
+.china1{
+    width: 50px;
+    height: 20px;
+    font-size: 8px;
+    float: left;
+    margin-top: 5px;
+}
+.foot{
+    font-size: 8px;
+    color: #888888;
+    margin-top:5px;
+}
+.footer_main_min{
+    margin: 0 auto;
+    padding: 0 22px;
+    height: auto;
+}
+.navlist{
+        width: 100%;
+        height: 16px;
+        padding: 10px 0;
+        text-align: left;
+        border-bottom: 1px solid #d6d6d6;
+    }
+.navlist:after{
+    content: "+";
+    float: right;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 8px;
+    margin-top: -2px;
+}
+.navlist a{
+    color: #111111;
+    font-size: 12px;
+    font-weight: 400;
+}
+/*底部结束*/
 /*阈值 >1024px*/
 @media screen and (min-width: 1024px){
     main{
@@ -211,21 +335,38 @@ nav .nav_list{
         background: url("../img/ipad_large.jpg") no-repeat center;
         background-size: 930px 355px;
     }
-    .sec_list h1{
+    .sec_list1 h1{
         font-size: 33px;
         line-height: 49px;
         margin-top: 48px;
     }
-    .sec_list h2{
+    .sec_list1 h2{
         width: 380px;
         font-size: 17px;
         line-height: 32px;
     }
-    .sec_list{
+    .sec_list1{
         height: 592px;
         border-left: 12px solid #fff;
         border-right: 6px solid #fff;
         background: url("../img/shop_for_college_large.jpg") no-repeat center;
+    }
+    .body_top{
+        border-bottom: 1px solid #d6d6d6;
+    }
+    .section_two li:nth-child(2n){
+        border-left: 6px solid #fff;
+        border-right: 12px solid #fff;
+    }
+    .body_top{
+        width: 980px;
+    }
+    .footer_main_max{
+        width: 980px;
+        height: 450px;
+    }
+    .footer_main_min{
+        display: none;
     }
 }
 /*阈值 <1024px*/
@@ -281,21 +422,35 @@ nav .nav_list{
         background: url("../img/ipad_medium.jpg") no-repeat center;
         background-size: 650px 325px;
     }
-    .sec_list h1{
+    .sec_list1 h1{
         font-size: 27px;
         line-height: 39px;
         margin-top: 40px;
     }
-    .sec_list h2{
+    .sec_list1 h2{
         width: 320px;
         font-size: 17px;
         line-height: 32px;
     }
-    .sec_list{
+    .sec_list1{
         height: 490px;
         border-left: 12px solid #fff;
         border-right: 6px solid #fff;
         background: url("../img/shop_for_college_medium.jpg") no-repeat center;
+    }
+    .section_two li:nth-child(2n){
+        border-left: 6px solid #fff;
+        border-right: 12px solid #fff;
+    }
+    .body_top{
+        border-bottom: 1px solid #d6d6d6;
+    }
+    .footer_main_max{
+        height: 448px;
+        display: block;
+    }
+    .footer_main_min{
+        display: none;
     }
 }
 /*阈值 <768px*/
@@ -362,21 +517,51 @@ nav .nav_list{
         background: url("../img/ipad_small.jpg") no-repeat center;
         background-size: 228px 340px;
     }
-    .sec_list h1{
+    .sec_list1 h1{
         font-size: 27px;
         line-height: 39px;
         margin-top: 35px;
     }
-    .sec_list h2{
+    .sec_list1 h2{
         width: 250px;
         font-size: 15px;
         line-height: 24px;
     }
-    .sec_list{
+    .sec_list1{
         width: 100%;
         height: 548px;
         border-left: none;
         border-right: none;
         background: url("../img/shop_for_college_small.jpg") no-repeat center;
+    }
+    .body_top{
+        border-bottom: none;
+    }
+    .section_two li:nth-child(2n){
+        border-left: none;
+        border-right: none;
+    }
+    .footer_main_max{
+        padding: 0 8px;
+    }
+    .body_bottom_left{
+        width: 100%;
+        height: auto;
+    }
+    .body_bottom_right{
+        width: 100%;
+    }
+    .body {
+        width: 100%;
+    }
+    .footer_main_max{
+        display: none;
+    }
+    .footer_main_min{
+        display: block;
+    }
+    .foot{
+        font-size: 8px;
+        color: #888888;
     }
 }
