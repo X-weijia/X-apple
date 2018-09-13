@@ -27,11 +27,117 @@ nav .nav_list{
     align-items: center;
 }
 .nav_list a{
-    font-size: 13px;
+    font-size: 22px;
     color: #fff;
+    cursor: pointer;
 }
 .nav_list a:hover{
     color: #bebebe;
+}
+.nav_list .nav_i{
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+.nav_list .nav_i:hover{
+    color: #bebebe;
+}
+.icon-yunsuan-dengyu{
+    color: #eee;
+}
+.nav_list .min_box{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 20;
+    display: none;
+}
+.icon-cuohao{
+    color: #fff;
+    position: absolute;
+    top: -35px;
+    left: 22px;
+    cursor: pointer;
+}
+.icon-cuohao:hover{
+    color: #bebebe;
+}
+.search{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #282828;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sea{
+    height: 195px;
+    margin: -5px 50px;
+    /* position: absolute;
+    top: 80px;
+    left: 50px; */
+    display: none;
+}
+.nav_list .min_box .sea li{
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    cursor: pointer;
+    color: #fff;
+    line-height: 40px;
+    border-bottom: 1px solid #282828;
+}
+.nav_list .min_box .sea li:last-child{
+    border-bottom: none;
+}
+.nav_list .min_box .search .sea li:hover{
+    color: #999;
+}
+.search .input{
+    width: 100%;
+    height: 36px;
+    padding: 0 50px;
+    position: relative;
+    
+}
+.search input{
+    width: 100%;
+    height: 36px;
+    border-radius:10px; 
+    border: none;   
+    outline: none;
+    background-color: #fff;
+    text-indent: 3em;
+}
+.search .input .icon-iconfonticonfontsousuo1{
+    position: absolute;
+    top: 7px;
+    left: 64px;
+    z-index: 30;
+}
+.nav_list .min_box .s_down{
+    height: 314px;
+    margin:10px auto;
+    padding: 0 50px;
+}
+.nav_list .min_box .s_down li{
+    height: 44px;
+    font-size: 17px;
+    cursor: pointer;
+    color: #fff;
+    line-height: 44px;
+    border-bottom: 1px solid #282828;
+    margin:10px auto;
+}
+.nav_list .min_box .s_down li:last-child{
+    border-bottom: none;
+}
+.nav_list .min_box .s_down li:hover{
+    color: #999;
 }
 /*导航结束*/
 /*sesction_one开始*/
@@ -264,8 +370,9 @@ p a:hover{
         padding: 10px 0;
         text-align: left;
         border-bottom: 1px solid #d6d6d6;
+        cursor: pointer;
     }
-.navlist:after{
+.navlist::after{
     content: "+";
     float: right;
     font-size: 14px;
@@ -277,6 +384,24 @@ p a:hover{
     color: #111111;
     font-size: 12px;
     font-weight: 400;
+}
+.f_n_list{
+    height: auto;
+    background-color: #0070c9;
+    margin-top: 5px;
+    display: none;
+}
+.f_n_list li{
+    height: 26px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    text-indent: 2em;
+    cursor: pointer;
+    color: #aaa;
+}
+.f_n_list li:hover span{
+    border-bottom: 1px solid #ccc;
+    color: #666;
 }
 /*底部结束*/
 /*阈值 >1024px*/
